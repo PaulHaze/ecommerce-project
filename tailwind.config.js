@@ -1,4 +1,4 @@
-// const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx}'],
@@ -25,6 +25,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        sans: ['Oswald', ...defaultTheme.fontFamily.sans],
         cursive: ['The Nautigal'],
       },
       minWidth: {
