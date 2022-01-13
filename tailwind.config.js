@@ -1,3 +1,5 @@
+// const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
@@ -22,6 +24,9 @@ module.exports = {
       center: true,
     },
     extend: {
+      fontFamily: {
+        cursive: ['The Nautigal'],
+      },
       minWidth: {
         sm: '640px',
         md: '768px',
