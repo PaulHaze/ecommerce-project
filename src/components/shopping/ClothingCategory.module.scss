@@ -1,0 +1,10 @@
+.clothingContainer {
+  @apply flex flex-1 items-center justify-center min-w-[45%] flex-grow m-0.5 p-10 bg-blue-200;
+  @screen sm {
+    @apply min-w-[30%];
+  }
+}
+
+.textContainer {
+  @apply px-4 py-3 text-center bg-white/80;
+}
