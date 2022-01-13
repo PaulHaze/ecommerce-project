@@ -34,13 +34,16 @@
   a {
     @apply text-blue-600;
   }
-  .cursive {
-    font-family: 'The Nautigal';
-  }
 }
 
 @layer components {
   .bb {
     @apply border-2 border-red-600 sm:border-blue-600 md:border-green-600 lg:border-pink-600 xl:border-teal-600;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 }
