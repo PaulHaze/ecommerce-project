@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './ClothingCategory.module.scss';
 
-export function ClothingCategory({ categoryTitle }) {
+export function ClothingCategory({ categoryTitle = 'Hats' }) {
   return (
     <div className={styles.clothingContainer}>
       <div className={styles.textContainer}>
