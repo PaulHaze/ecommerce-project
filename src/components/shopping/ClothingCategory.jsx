@@ -1,8 +1,10 @@
 import React from 'react';
 
-export function ClothingCategory({ categoryTitle = 'HATS' }) {
+// import styles from './ClothingCategory.module.scss';
+
+export function ClothingCategory({ categoryTitle }) {
   return (
-    <div className="flex-grow m-2 p-10 bg-blue-200 flex-center">
+    <div className="sm:min-w-[30%] flex-1 flex-grow m-0.5 p-10 bg-blue-200 flex-center">
       <div className="px-4 py-3 bg-white/80 text-center">
         <h2 className="text-2xl text-gray-800/80">
           {categoryTitle.toUpperCase()}
