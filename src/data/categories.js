@@ -1,22 +1,34 @@
 export default [
   {
+    category: 'hats',
+    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
     id: 1,
-    category: 'Hats',
+    linkUrl: 'shop/hats',
   },
   {
+    category: 'jackets',
+    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
     id: 2,
-    category: 'Jackets',
+    linkUrl: 'shop/jackets',
   },
   {
+    category: 'sneakers',
+    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
     id: 3,
-    category: 'Shoes',
+    linkUrl: 'shop/sneakers',
   },
   {
+    category: 'womens',
+    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+    size: 'large',
     id: 4,
-    category: 'Womens',
+    linkUrl: 'shop/womens',
   },
   {
+    category: 'mens',
+    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+    size: 'large',
     id: 5,
-    category: 'Men',
+    linkUrl: 'shop/mens',
   },
 ];

@@ -24,6 +24,10 @@ module.exports = {
       center: true,
     },
     extend: {
+      transitionProperty: {
+        width: 'width',
+        height: 'height',
+      },
       fontFamily: {
         sans: ['Oswald', ...defaultTheme.fontFamily.sans],
         cursive: ['The Nautigal'],

@@ -1,10 +1,41 @@
-.clothingContainer {
-  @apply flex flex-1 items-center justify-center min-w-[45%] flex-grow m-0.5 p-10 bg-blue-200;
+.categoryContainer {
+  @apply flex flex-1 items-center justify-center min-w-[45%] flex-grow m-0.5 bg-transparent aspect-square overflow-hidden relative;
   @screen sm {
     @apply min-w-[30%];
+  }
+  @screen lg {
+    @apply aspect-[4/3];
+  }
+}
+
+.imgContainer {
+  @apply w-full h-full relative flex items-center justify-center;
+  transition: all 1.5s ease;
+  &:hover {
+    @apply scale-110;
+    .textContainer {
+      @apply w-full h-full;
+    }
   }
 }
 
 .textContainer {
-  @apply px-4 py-3 text-center bg-white/80;
+  @apply p-4 w-[120px] h-[120px] flex flex-col items-center justify-center text-center bg-white/70 sm:p-6 lg:p-10;
+  transition: width 0.15s ease, height 0.15s ease;
+  @screen sm {
+    @apply w-[140px] h-[140px];
+  }
+  @screen lg {
+    @apply w-[190px] h-[190px];
+  }
+}
+
+.categoryText {
+  @apply text-2xl text-gray-800/80;
+  @screen sm {
+    @apply text-3xl;
+  }
+  @screen lg {
+    @apply text-4xl;
+  }
 }

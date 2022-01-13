@@ -6,7 +6,11 @@ import categories from '@/data/categories';
 
 export function Directory() {
   const renderCategories = categories.map(cat => (
-    <ClothingCategory key={cat.id} categoryTitle={cat.category} />
+    <ClothingCategory
+      key={cat.id}
+      categoryTitle={cat.category}
+      imageUrl={cat.imageUrl}
+    />
   ));
   return (
     <div className="w-full flex flex-wrap justify-between">
