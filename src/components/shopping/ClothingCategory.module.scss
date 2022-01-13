@@ -1,5 +1,5 @@
 .categoryContainer {
-  @apply flex flex-1 items-center justify-center min-w-[45%] flex-grow m-0.5 bg-transparent aspect-square overflow-hidden relative;
+  @apply flex flex-1 items-center justify-center min-w-[45%] flex-grow m-0.5 bg-transparent aspect-square overflow-hidden relative cursor-pointer;
   @screen sm {
     @apply min-w-[30%];
   }
@@ -31,7 +31,7 @@
 }
 
 .categoryText {
-  @apply text-2xl text-gray-800/80;
+  @apply text-2xl text-gray-800/80 font-semibold;
   @screen sm {
     @apply text-3xl;
   }
